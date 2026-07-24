@@ -8,3 +8,4 @@ node_modules/
 /playwright/.auth/
 /LICENSE/
 /README.md/
+/github/workflows/playwright.yml/

@@ -11,11 +11,11 @@ export class LoginPage extends BasePage {
 		this.submitButton = this.page.locator('button[type="submit"]');
 	}
 
-	async login(username, password) {
-		await this.fill(this.usernameInput, username);
-		await this.fill(this.passwordInput, password);
-		await this.click(this.submitButton);
-	}
+	async loginSwag(user, pass) {
+    await this.page.locator('#user-name').fill(user);
+    await this.page.locator('#password').fill(pass);
+    await this.page.locator('#login-button').click();
+  }
 }
 
 export default LoginPage;
